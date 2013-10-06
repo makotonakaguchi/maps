@@ -63,8 +63,22 @@ function initialize() {
     "stylers": [
       { "color": "#baddaa" }
     ]
-    }
-  ];
+  },{
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#3d3d3d" }
+    ]
+  },{
+    "featureType": "transit",
+    "elementType": "labels.text",
+    "stylers": [
+      { "visibility": "on" },
+      { "invert_lightness": true },
+      { "saturation": -100 }
+    ]
+  }
+ ];
   
   var myLatlng = new google.maps.LatLng(34.690141, 135.489604);
   var mapOptions = {
@@ -76,7 +90,7 @@ function initialize() {
 
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-  var ctaLayer = new google.maps.KmlLayer('http://makotonakaguchi.github.io/maps/test.kml');
+  var ctaLayer = new google.maps.KmlLayer('http://makotonakaguchi.github.io/maps/example.kml');
   ctaLayer.setMap(map);
   
 }
