@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+  <name>test</name>
+  <description>test</description>
+  <Style id="style1">
+    <LineStyle>
+      <color>03000000</color>
+      <width>1</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>73990000</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Placemark>
+    <name>test</name>
+    <styleUrl>#style1</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            135.534851,34.676823,0.000000
+            135.534882,34.677013,0.000000
+            135.535263,34.676991,0.000000
+            135.535217,34.676739,0.000000
+            135.535126,34.676746,0.000000
+            135.535141,34.676785,0.000000
+            135.534851,34.676823,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+</Document>
+</kml>
