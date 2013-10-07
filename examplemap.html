@@ -49,7 +49,7 @@ function initialize() {
     "featureType": "landscape",
     "elementType": "labels",
     "stylers": [
-      { "visibility": "on" }
+      { "visibility": "off" }
     ]
   },{
     "featureType": "water",
@@ -64,18 +64,24 @@ function initialize() {
       { "color": "#baddaa" }
     ]
   },{
-    "featureType": "transit.station",
-    "elementType": "geometry",
+    "featureType": "transit",
+    "elementType": "labels",
     "stylers": [
-      { "color": "#3d3d3d" }
+      { "visibility": "on" },
+      { "gamma": 0.01 },
+      { "saturation": -100 },
+      { "invert_lightness": true },
+      { "lightness": 5 },
+      { "weight": 4.9 }
     ]
   },{
     "featureType": "transit",
-    "elementType": "labels.text",
+    "elementType": "geometry.fill",
     "stylers": [
-      { "visibility": "on" },
-      { "invert_lightness": true },
-      { "saturation": -100 }
+      { "lightness": -100 },
+      { "color": "#3b3b3b" },
+      { "weight": 4.2 },
+      { "gamma": 0.63 }
     ]
   }
  ];
