@@ -5,6 +5,15 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>Example Map</title>
     <link href="default.css" rel="stylesheet">
+    <style>
+    div[title="地図のスタイルを変更"] {
+      padding: 16px !important;
+      font-size: 20px !important;
+    }
+    div[title="ズームイン"] {
+      height: 200% !important;
+    }
+    </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
     <script>
@@ -117,8 +126,24 @@ function initialize() {
   
   var myLatlng = new google.maps.LatLng(34.690141, 135.489604);
   var mapOptions = {
-    zoom: 18,
     center: myLatlng,
+
+    panControl: false,
+    zoomControl: true,
+    zoomControlOptions: {
+    style: google.maps.ZoomControlStyle.SMALL,
+    position: google.maps.ControlPosition.RIGHT_BOTTOM
+  },
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+    position: google.maps.ControlPosition.LEFT_BOTTOM
+    },
+//    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    
+    zoom: 18,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     styles: styles
   };
