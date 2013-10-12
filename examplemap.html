@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <title>Example Map</title>
-    <link href="default.css" rel="stylesheet">
-    <style>
-    div[title="地図のスタイルを変更"] {
-      padding: 16px !important;
-      font-size: 20px !important;
-    }
-    div[title="ズームイン"] {
-      height: 200% !important;
-    }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<head vocab="http://schema.org/" typeof="WebPage">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta property="keywords" content="Google Map, API v3, カスタマイズ, Example" />
+<meta property="description" content="Google Map APIを利用したアクセスマップ例です。" />
+<title>Example Map</title>
+<link href="default.css" rel="stylesheet">
+<style>
 
-    <script>
+div[title="地図のスタイルを変更"] {
+  padding: 16px !important;
+  font-size: 20px !important;
+}
+div[title="ズームイン"] {
+  height: 200% !important;
+}
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script>
 function initialize() {
 
   var styles =   [
